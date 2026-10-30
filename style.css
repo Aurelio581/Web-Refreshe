@@ -1,0 +1,221 @@
+
+/* UNIVERSAL SELECTOR
+   Applies these basic settings to every HTML element. */
+* {
+    margin: 0; /* Removes the default space around elements. */
+    padding: 0; /* Removes the default space inside elements. */
+    box-sizing: border-box; /* Includes padding and borders in the element's total size. */
+}
+
+/* HTML SETTINGS */
+html {
+    scroll-behavior: smooth; /* Makes navigation between sections smooth. */
+}
+
+/* BODY SETTINGS
+   Defines the main font, background colour, text colour and line spacing. */
+body {
+    font-family: Arial, sans-serif; /* Sets the font used across the website. */
+    background-color: #f8f9fc; /* Sets the page background colour. */
+    color: #252b3f; /* Sets the default text colour. */
+    line-height: 1.6; /* Adds vertical space between lines of text. */
+}
+
+/* CONTAINER
+   Controls the width and horizontal position of the main content. */
+.container {
+    width: 85%; /* Uses 85% of the available screen width. */
+    max-width: 1100px; /* Prevents the content from becoming too wide. */
+    margin: auto; /* Centres the container horizontally. */
+}
+
+/* HEADER
+   Styles the top section of the website. */
+header {
+    background-color: white; /* Sets the header background to white. */
+    padding: 20px 0; /* Adds vertical space inside the header. */
+    border-bottom: 1px solid #ddd; /* Adds a light border below the header. */
+}
+
+/* HEADER LAYOUT
+   Uses Flexbox to arrange the logo and navigation. */
+header .container {
+    display: flex; /* Places child elements in a flexible row. */
+    justify-content: space-between; /* Creates space between the logo and navigation. */
+    align-items: center; /* Aligns items vertically in the centre. */
+    gap: 20px; /* Adds space between child elements. */
+}
+
+/* LOGO */
+.logo {
+    color: #090a0b; /* Gives the logo its blue colour. */
+}
+
+/* NAVIGATION
+   Displays the navigation links in a horizontal row. */
+nav {
+    display: flex; /* Places navigation links next to each other. */
+    gap: 20px; /* Adds space between navigation links. */
+}
+
+/* NAVIGATION LINKS */
+nav a {
+    text-decoration: none; /* Removes the default underline from links. */
+    color: #333; /* Sets the link text colour. */
+}
+
+/* NAVIGATION HOVER EFFECT */
+nav a:hover {
+    color: #31d536; /* Changes the link colour when the mouse moves over it. */
+}
+
+/* BUTTONS
+   Applies the same basic style to buttons and elements with the btn class. */
+button, .btn {
+    background-color: #16c02d; /* Sets the button background colour. */
+    color: white; /* Makes the button text white. */
+    border: none; /* Removes the default button border. */
+    padding: 12px 20px; /* Adds space inside the button. */
+    border-radius: 6px; /* Rounds the button corners. */
+    cursor: pointer; /* Changes the cursor to a pointer on hover. */
+    text-decoration: none; /* Removes underlines from button-style links. */
+}
+
+/* BUTTON HOVER EFFECT */
+button:hover, .btn:hover {
+    background-color: #34384b; /* Darkens the button when the mouse moves over it. */
+}
+
+/* HERO SECTION
+   Styles the main introduction area of the homepage. */
+.hero {
+    padding: 100px 0; /* Adds vertical space above and below the content. */
+    background-color: #eef1ff; /* Sets a light blue background. */
+}
+
+/* SUBTITLE */
+.subtitle {
+    color: #3157d5; /* Uses the main blue colour for the subtitle. */
+    font-weight: bold; /* Makes the subtitle text bold. */
+    margin-bottom: 15px; /* Adds space below the subtitle. */
+}
+
+/* MAIN HEADING */
+.hero h1 {
+    font-size: 42px; /* Sets the size of the main heading. */
+    margin-bottom: 20px; /* Adds space below the heading. */
+}
+
+/* HIGHLIGHTED TEXT IN THE MAIN HEADING */
+.hero h1 span {
+    color: #3157d5; /* Highlights part of the heading in blue. */
+}
+
+/* HERO PARAGRAPH */
+.hero p {
+    max-width: 600px; /* Limits the paragraph width for readability. */
+    margin-bottom: 25px; /* Adds space below the paragraph. */
+}
+
+/* GENERAL CONTENT SECTIONS
+   Applies consistent spacing to the website sections. */
+.section {
+    padding: 70px 0; /* Adds vertical space inside each section. */
+}
+
+/* SECTION HEADINGS */
+.section h2 {
+    font-size: 30px; /* Sets the size of section headings. */
+    margin-bottom: 25px; /* Adds space below each heading. */
+}
+
+/* CARD GRID
+   Uses CSS Grid to organise cards into three equal columns. */
+.grid {
+    display: grid; /* Activates CSS Grid layout. */
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns. */
+    gap: 20px; /* Adds space between the cards. */
+}
+
+/* INDIVIDUAL CARD */
+.card {
+    background-color: white; /* Sets the card background to white. */
+    padding: 25px; /* Adds space inside the card. */
+    border-radius: 10px; /* Rounds the card corners. */
+    border: 1px solid #e2e6f0; /* Adds a light border around the card. */
+    transition: transform 0.3s; /* Makes movement effects smoother. */
+}
+
+/* CARD HOVER EFFECT */
+.card:hover {
+    transform: translateY(-5px); /* Moves the card slightly upwards on hover. */
+}
+
+/* CONTACT FORM
+   Controls the form width and the arrangement of its fields. */
+form {
+    max-width: 600px; /* Limits the maximum width of the form. */
+    display: flex; /* Uses Flexbox to arrange the form elements. */
+    flex-direction: column; /* Places form elements vertically. */
+    gap: 15px; /* Adds space between form elements. */
+}
+
+/* INPUT FIELDS AND TEXT AREA */
+input, textarea {
+    padding: 13px; /* Adds space inside the fields. */
+    border: 1px solid #ccc; /* Adds a light border around the fields. */
+    border-radius: 6px; /* Rounds the field corners. */
+    font-family: Arial, sans-serif; /* Uses the same font as the website. */
+    font-size: 15px; /* Sets the text size inside the fields. */
+}
+
+/* MESSAGE TEXT AREA */
+textarea {
+    min-height: 120px; /* Sets the minimum height of the message field. */
+}
+
+/* FORM FEEDBACK MESSAGE */
+#formMessage {
+    color: #3157d5; /* Displays form feedback messages in blue. */
+}
+
+/* FOOTER
+   Styles the bottom section of the website. */
+footer {
+    background-color: #202435; /* Sets a dark background colour. */
+    color: white; /* Makes the footer text white. */
+    text-align: center; /* Centres the footer content. */
+    padding: 25px; /* Adds space inside the footer. */
+}
+
+/* DARK MODE
+   Changes the website colours when the dark-mode class is active. */
+body.dark-mode {
+    background-color: #171a26; /* Changes the page background to dark. */
+    color: white; /* Changes the default text colour to white. */
+}
+
+/* DARK MODE HEADER AND CARDS */
+body.dark-mode header,
+body.dark-mode .card {
+    background-color: #252a3b; /* Gives the header and cards a dark background. */
+    color: white; /* Makes their text white. */
+}
+
+/* DARK MODE NAVIGATION LINKS */
+body.dark-mode nav a {
+    color: white; /* Changes navigation links to white. */
+}
+
+/* DARK MODE HERO SECTION */
+body.dark-mode .hero {
+    background-color: #22283b; /* Changes the hero background to dark blue. */
+}
+
+/* DARK MODE FORM FIELDS */
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #252a3b; /* Changes form field backgrounds to dark. */
+    color: white; /* Makes the text inside the fields white. */
+}
+
